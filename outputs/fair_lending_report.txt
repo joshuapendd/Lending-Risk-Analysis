@@ -1,0 +1,38 @@
+cutoff PD at 80% approval: 0.1860; declined 56,558 of 282,787
+
+Primary adverse-action reason among declined applicants:
+Credit score too low                        0.428
+Loan amount too high relative to income     0.164
+Too many recent credit inquiries            0.161
+Debt-to-income ratio too high               0.079
+Length of employment not provided           0.061
+Too many open accounts                      0.048
+Limited revolving credit experience         0.034
+Income insufficient for amount requested    0.019
+Revolving credit utilization too high       0.003
+Limited number of credit accounts           0.002
+No or few mortgage accounts                 0.000
+
+Example reason codes:
+  loan 61652239  PD=0.197: Credit score too low; Revolving credit utilization too high; Debt-to-income ratio too high; Too many recent credit inquiries
+  loan 65323926  PD=0.194: Too many recent credit inquiries; Credit score too low; Limited revolving credit experience; Revolving credit utilization too high
+  loan 68433940  PD=0.262: Credit score too low; Income insufficient for amount requested; Limited number of credit accounts; Limited revolving credit experience
+  loan 65731404  PD=0.240: Credit score too low; Debt-to-income ratio too high; Income insufficient for amount requested; Limited number of credit accounts
+
+Approval rate by state (states with 1,000+ loans), overall 80.0%:
+            applicants  approval_rate  actual_bad_rate  air_vs_overall
+addr_state                                                            
+HI                1401          0.732            0.137           0.915
+MS                1716          0.755            0.189           0.944
+MI                7732          0.765            0.145           0.957
+FL               20351          0.769            0.161           0.961
+NV                4244          0.770            0.182           0.963
+...
+            applicants  approval_rate  actual_bad_rate  air_vs_overall
+addr_state                                                            
+TX               23507          0.824            0.149           1.030
+MA                6370          0.828            0.130           1.035
+RI                1228          0.828            0.138           1.035
+VA                7659          0.829            0.139           1.036
+MD                6461          0.845            0.152           1.057
+lowest/highest approval ratio: 0.866

@@ -1,0 +1,16 @@
+[PASS] row count raw CSV vs SQLite: csv=2,260,668 db=2,260,668
+[PASS] 2014 grade-B default rate, raw CSV vs SQL: raw=0.1072 sql=0.1072 (n=53,460)
+[PASS] 2014 grade-B net loss, raw vs DB: raw=$33,542,922 db=$33,542,922
+[PASS] 0 <= net_loss <= funded, zero for good loans: violations=0
+[PASS] status shares sum to 1 per vintage: range 0.9999-1.0000
+[PASS] vintage curve at month 36 == cohort default rate: max diff 0.000005
+[PASS] no leakage / excluded fields in features: ['credit_hist_yrs', 'delinq_2yrs', 'dti', 'emp_length_missing', 'emp_length_yrs', 'fico', 'home_ownership', 'inq_last_6mths', 'loan_to_income', 'log_income', 'log_loan_amnt', 'log_revol_bal', 'mort_acc', 'open_acc', 'pub_rec', 'pub_rec_bankruptcies', 'purpose', 'revol_util', 'total_acc', 'verification_status']
+[PASS] train/test loan ids disjoint: train=306,462 test=282,787 overlap=0
+[PASS] loan ids unique in sample: n=589,249
+[PASS] test AUC: manual vs sklearn vs saved: manual=0.66141 saved=0.66141
+[PASS] raw data: default falls with FICO, rises with DTI: fico monotone=True dti monotone=True
+[PASS] model coefficient signs as expected: num__fico=-0.347, num__dti=+0.142, num__inq_last_6mths=+0.167, num__loan_to_income=+0.159
+[PASS] numeric coefficients: sklearn vs statsmodels refit: max abs diff 0.0022 (sklearn has light L2 penalty, C=1)
+[PASS] mean PD vs actual bad rate within 3 pts on 2015 test: mean PD=0.1343 actual=0.1488
+[PASS] 100% approval identical across rankings and == portfolio loss: loss rate 0.0756
+[PASS] model loss rate increases with approval rate: 
